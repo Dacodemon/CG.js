@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <button id="ref">Reference</button>
+    <h1 id="r"></h1>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+document.getElementById("ref").addEventListener("click",function(){
+    var r=document.getElementById("r")
+    var addH1=document.createElement("h1")
+    addH1.innerText="addH1-addH6"
+    addH1.id="addH1"
+    addH1.onclick=function(){
+r.innerText='addH1 is a cg.js function that allows you to add an h1 tag with ease. You can use it as so addH1("tag id","tag text");'
+    }
+    document.body.appendChild(addH1)
+    var addDiv=document.createElement("h1")
+    addDiv.innerText="addDiv"
+    addDiv.id="addDiv"
+    addDiv.onclick=function(){
+r.innerText='addDiv is a cg.js function that adds a div to your page, you can use it like: addDiv("desired div id");'
+    }
+    document.body.appendChild(addDiv)
+    var addP=document.createElement("h1")
+    addP.innerText="addP"
+    addP.id="addP"
+    addP.onclick=function(){
+r.innerText='addP is a cg.js function that adds a p tag to your page, you can use it like: addP("desired p tag id","desired p tag text");'
+    }
+    document.body.appendChild(addP)
+    var circle=document.createElement("h1")
+    circle.id='circle'
+    circle.innerText="circle('canvas id',x,y,r);"
+    circle.onclick=function(){
+        r.innerText="cirlce is a cg.js function that draws a circle onto a canvas you can use it like: circle('canvas id',x,y,r);"
+    }
+document.body.appendChild(circle)
+var square=document.createElement("h1")
+square.id="square"
+square.innerText="square('canvas id',x,y,w,h);"
+square.onclick=function(){
+    r.innerText="square is a cg.js function that draws a square or rectangle to your desired canvas, you can use it like square('canvas id',x,y,w,h);"
+}
+document.body.appendChild(square)
+var arc=document.createElement("h1")
+arc.id="arc"
+arc.innerText="arc('canvas id',x,y,r,start,stop,direction-boolean);"
+arc.onclick=function(){
+    r.innerText="arc is a cg.js function that draws an arc to your canvas you can use it like: arc('canvas id',x,y,r,start,stop,direction);"
+}
+document.body.appendChild(arc)
+var trgl=document.createElement("h1")
+trgl.id="triangle"
+trgl.innerText="triangle('canvas id',x1,y1,x2,y2,x3,y3);"
+trgl.onclick=function(){
+    r.innerText="triangle is a cg.js function that draws a triangle to your canvas, you can use it like: triangle('canvas id',x1,y1,x2,y2,x3,y3);"
+}
+document.body.appendChild(trgl)
+var color=document.createElement("h1")
+color.id="color"
+color.innerText="color('canvas id','color');"
+color.onclick=function(){
+    r.innerText="color is a cg.js function that changes the color of your shape, you can use it like: color('canvis id','color'); you can use color calling like rgb, hsl or css colors for instance 'red','green', ect."
+}
+var stroke=document.createElement("h1")
+stroke.id="stroke"
+stroke.innerText="stroke('canvas id','color');"
+stroke.onclick=function(){
+    r.innerText="stroke is a cg.js function that changes the outline of the shape, you can use it like: stroke('canvas id','color'); you can use it with rgb, hsl, and css colors. like stroke('example','rgb(34,34,34));"
+}
+document.body.appendChild(stroke)
+var inv=document.createElement("h1")
+inv.id="inv"
+inv.innerText="invisible('canvas id');"
+inv.onclick=function(){
+    r.innerText="invisible is a cg.js function that turns your shapes inner color invisible and leaves the outline the same transparency, you can use it like: invisible('canvas id');"
+}
+document.body.appendChild(inv)
+var noStroke=document.createElement("h1")
+noStroke.id="noStroke"
+noStroke.innerText="noStroke('canvas id');"
+noStroke.onclick=function(){
+    r.innerText="noStroke is a cg.js function that turns the outline of your shape transparent, you can use it like: noStroke('canvas id');"
+}
+document.body.appendChild(noStroke)
+var pop=document.createElement("h1")
+pop.id="pop"
+pop.innerText="pop('canvas id');"
+pop.onclick=function(){
+    r.innerText="push and pop are  cg.js functions that allow you to establish a matrix till you call the pop function. push('canvas id'); turn('canvas id',deg);pop('canvas id'); nothing will be rotated beyond the pop function."
+}
+document.body.appendChild(pop)
+var place=document.createElement("h1")
+place.id="place"
+place.innerText="place('canvas id',x,y);"
+place.onclick=function(){
+    r.innerText="place is a cg.js function that allows you to place a shape by an offset and can be used with the push and pop functions to create spirographs and other cool pictures. place('canvas id',x,y);"
+}
+document.body.appendChild(place)
+var turn=document.createElement("h1")
+turn.id="turn"
+turn.innerText="turn('canvas id',degrees);"
+turn.onclick=function(){
+    r.innerText="turn is a cg.js function that rotates a shape along a 2d plain, you can use it like: turn('canvas id',degrees);"
+}
+document.body.appendChild(turn)
+var styleFont=document.createElement("h1")
+styleFont.id="styleFont"
+styleFont.innerText="styleFont('html tag id','font');"
+styleFont.onclick=function(){
+    r.innerText="styleFont is a cg.js function that changes the font of an html tag and can be used like: styleFont('example id','example-font');"
+}
+document.body.appendChild(styleFont)
+var strokeSize=document.createElement("h1")
+strokeSize.id="strokeSize"
+strokeSize.innerText="strokeSize('canvas id',size);"
+strokeSize.onclick=function(){
+    r.innerText="strokeSize is a cg.js function that changes the size of the outline of following shapes after the function. You can use it like: strokeSize('canvas id',size);"
+}
+document.body.appendChild(strokeSize)
+var shape=document.createElement("h1")
+shape.id="shape"
+shape.innerText="shape('canvas id',parameters,x1,y1,x2,y2,x3,y3,x4,y4,x5,y5,x6,y6,x7,y7,x8,y8,x9,y9,x10,y10);"
+shape.onclick=function(){
+    r.innerText="shape is a very customizable cg.js function, it draws a shape with up to 10 angles. You can use the parameters to tell the function how many angles your shape has for example: shape('canvas id',4,x1,y1,x2,y2,x3,y3,x4,y4); The 4 means that you will draw a shape with 4 lines/angles. shape does require at least 2 parameters, and at most 10 parameters. shape('canvas id',x1,y1,x2,y2,x3,y3,x4,y4,x5,y5,x6,y6,x7,y7,x8,y8,x9,y9,x10,y10) "
+}
+document.body.appendChild(shape)
+var text=document.createElement("h1")
+text.id="text"
+text.innerText="text('canvas id','desired text',x,y,w,h);"
+text.onclick=function(){
+    r.innerText="text is a cg.js function that allows you place text to the canvas you can use it like: text('canvas id','desired text',x,y,w,h);"
+}
+document.body.appendChild(text)
+var htmlTextColor=document.createElement("h1")
+htmlTextColor.id="htmlTextColor"
+htmlTextColor.innerText=`htmlTextColor("tags' id","color");`
+htmlTextColor.onclick=function(){
+    r.innerText="htmlTextColor is a cg.js function that allows you to change the color of the text inside h1 tags, buttons and other html tags with text. You can use it with rgb, hsl and css colors or other forms of calling colors. for example: htmlTextColor('exampleId','red'); htmlTextColor('exampleId','rgb(89,89,89')); "
+}
+document.body.appendChild(htmlTextColor)
+var htmlBackground=document.createElement("h1")
+htmlBackground.id="htmlBackground"
+htmlBackground.innerText="htmlBackground('tags id','color');"
+htmlBackground.onclick=function(){
+    r.innerText="htmlBackground is a cg.js function that let's you change the background color of html tags like h1,button,div,and other html tags! You can use it like: htmlBackground('html tag is','color'); you can use rgb,color names,hsl,rgba, and css color codes."
+}
+document.body.appendChild(htmlBackground)
+var line=document.createElement("h1")
+line.id="line"
+line.innerText="line('canvas id',x1,y1,x2,y2);"
+line.onclick=function(){
+    r.innerText="line is a cg.js function that allows you to draw lines to your desired canvas you can use it like: line('canvas id',x1,y1,x2,y2);"
+}
+document.body.appendChild(line)
+var mouseX=document.createElement("h1")
+mouseX.id="mouseX-mouseY"
+mouseX.innerText="mouseX-mouseY"
+mouseX.onclick=function(){
+    r.innerText="mouseX and mouseY are cg.js variables that track the mouses' x  or y coordinates across the screen. You can use them to create if statements to create 'canvas buttons' or other cool stuff."
+}
+document.body.appendChild(mouseX)
+var frames=document.createElement("h1")
+frames.id="frames"
+frames.innerText="frames"
+frames.onclick=function(){
+    r.innerText="'frames' is a cg.js variable that tracks how many frames past since the starting of the loop function, it can be used to make js animations and other cool stuff."
+}
+var loop=document.createElement("h1")
+loop.id="loop"
+loop.innerText="function loop(){}"
+loop.onclick=function(){
+    r.innerText="loop is a cg.js function that loops forever and can be used to make animations or other things."
+}
+document.body.appendChild(frames)
+document.body.appendChild(loop)
+
+var keyNumValue=document.createElement("h1")
+keyNumValue.id="keyNumValue"
+keyNumValue.innerText="keyNumValue"
+keyNumValue.onclick=function(){
+    r.innerText="keyNumValue is a cg.js variable that stores the keyCode from the keyboard for instance a is 65 and z is 90."
+}
+document.body.appendChild(keyNumValue)
+var mouseClick=document.createElement("h1")
+mouseClick.id="mouseClick"
+mouseClick.innerText="mouseClick"
+mouseClick.onclick=function(){
+    r.innertext="mouseClick is a cg.js event function that allows you to call events when the mouse is clicked. function mouseClick(){ code in here}"
+}
+document.body.appendChild(mouseClick)
+var mouseMove=document.createElement("h1")
+mouseMove.id="mouseMove"
+mouseMove.innerText="mouseMove"
+mouseMove.onclick=function(){
+    r.innerText="mouseMove is a cg.js function that is called every time the mouse is moved. function mouseMove(){code in here will be called every time the mouse is moved}"
+}
+document.body.appendChild(mouseMove)
+var mouseUp=document.createElement("h1")
+mouseUp.id="mouseUp"
+mouseUp.innerText="mouseUp"
+mouseUp.onclick=function(){
+    r.innerText="mouseUp is a cg.js event function that is called every time that the mouse button is let up. function mouseUp(){code in here will be ran when the mouse button is let up}"
+}
+document.body.appendChild(mouseUp)
+var mouseDown=document.createElement("h1")
+mouseDown.id="mouseDown"
+mouseDown.innerText="mouseDown"
+mouseDown.onclick=function(){
+    r.innerText="mouseDown is a cg.js event function that is called when the mouse button is down. function mouseDown(){ code in here will be ran once when the mouse button is pushed}"
+}
+document.body.appendChild(mouseDown)
+var mouseDrag=document.createElement("h1")
+mouseDrag.id="mouseDrag"
+mouseDrag.innerText="mouseDrag"
+mouseDrag.onclick=function(){
+    r.innerText="mouseDrag is a cg.js function that is called for the duration of the mouse drag. function mouseDrag(){code in here will run while the mouse is dragging} "
+}
+document.body.appendChild(mouseDrag)
+var mouseEnter=document.createElement("h1")
+mouseEnter.id="mouseEnter"
+mouseEnter.innerText="mouseEnter"
+mouseEnter.onclick=function(){
+    r.innerText="mouseEnter is a cg.js function that is ran when the mouse enters the window by default.You can however run event listeners to change this: document.getElementById('id').addEventListener('mouseenter',mouseEnter); function mouseEnter(){}"
+}
+document.body.appendChild(mouseEnter)
+var mouseOut=document.createElement("h1")
+mouseOut.id="mouseOut"
+mouseOut.innerText="mouseOut"
+mouseOut.onclick=function(){
+    r.innerText="mouseOut is a cg.js function that is by default when the mouse is outside the page but you can change that by adding an event listener. document.getElementById('id').addEventListener('mouseout',mouseOut); function mouseOut(){with the event listener the code in here will be ran when the mouse is outside the element with the id of id. By default the code will otherwise run when the mouse is outside the window.}"
+}
+document.body.appendChild(mouseOut)
+var keyUp=document.createElement("h1")
+keyUp.id="keyUp"
+keyUp.innerText="keyUp"
+keyUp.onclick=function(){
+    r.innerText="keyUp is a cg.js function that is called when a key is let up. function keyUp(){code in here will be ran once when the key is let up.}"
+}
+document.body.appendChild(keyUp)
+var keyDown=document.createElement("h1")
+keyDown.id="keyDown"
+keyDown.innerText="keyDown"
+keyDown.onclick=function(){
+    r.innerText="keyDown is a cg.js function that is called repeatedly when a key is pressed. function keyDown(){code in here will be called repeatedly when a key is pressed}"
+}
+document.body.appendChild(keyDown)
+var keyPress= document.createElement("h1")
+keyPress.id="keyPress"
+keyPress.innerText="keyPress"
+keyPress.onclick=function(){
+    r.innerText="keyPress is a cg.js function that is called repeatedly when the key is pressed. function keyPress(){code in here will be called repeatedly when the key is pressed}"
+}
+document.body.appendChild(keyPress)
+var addAudioFileUploader=document.createElement("h1")
+addAudioFileUploader.id="addAudioFileUploader"
+addAudioFileUploader.innerText="addAudioFileUploader('id',width,height)"
+addAudioFileUploader.onclick=function(){
+    r.innerText="addAudioFileUploader is a cg.js function that allows you to create a file uploader that processes audio files and create a default browser audio player."
+}
+var addVideoFileUploader=document.createElement("h1")
+addVideoFileUploader.id="addVideoFileUploader"
+addVideoFileUploader.innerText="addVideoFileUploader('id',width,height)"
+addVideoFileUploader.onclick=function(){
+    r.innerText="addVideoFileUploader is a cg.js function that allows you to create a file uploader that processes video files and change the width and height.The function also adds a browser created video player."
+}
+var addPhotoFileUploader=document.createElement("h1")
+addPhotoFileUploader.id="addPhotoFileUploader"
+addPhotoFileUploader.innerText="addPhotoFileUploader('id',width,height)"
+addPhotoFileUploader.onclick=function(){
+    r.innerText="addPhotoFileUploader is a cg.js function that allows you to create a file uploader that processes image files and change the width and height."
+}
+document.body.appendChild(addAudioFileUploader)
+document.body.appendChild(addVideoFileUploader)
+document.body.appendChild(addPhotoFileUploader)
+var square=document.createElement("h1")
+square.innerText="squareRoot"
+square.id="squareRoot"
+square.onclick=function(){
+    r.innerText="squareRoot is a cg.js function that allows you to take the square root of a number or variable you can use it like this. Log(squareRoot(50)); this logs the outcome to the browser console but you can also do this, square('t',squareRoot(30),50,50,50); this draws a square with the x of the square root of 30."
+}
+document.body.appendChild(square)
+var raiseToExponent=document.createElement("h1")
+raiseToExponent.innerText="raiseToExponent"
+raiseToExponent.id="raiseToExponent"
+raiseToExponent.onclick=function(){
+    r.innerText="raiseToExponent is a cg.js function that raises the number to the declared exponent such as Log(raiseToExponent(3,3)); this logs the outcome to the browsers console. the outcome should be 27."
+}
+document.body.appendChild(raiseToExponent)
+var add=document.createElement("h1")
+add.innerText="add('params',n1,n2,n3,n4,n5,n6,n7,n8,n9,n10)"
+add.id='add'
+add.onclick=function(){
+    r.innerText="add is a cg.js return function that returns the sum of up to 10 numbers you can use it like: Log(add(2,1,1)); or like circle('canvas id',add(3,frames,5),200,30,30); add can be used so. add(total numbers,n1,n2,n3,n4,n5,n6,n7,n8,n9,n10) CG.js"
+}
+document.body.appendChild(add)
+var subtract=document.createElement("h1")
+subtract.innerText="subtract(params,n1,n2,n3,n4,n5,n6,n7,n8,n9,n10)"
+subtract.id="subtract"
+subtract.onclick=function(){
+    r.innerText="subtract is a cg.js function that returns the sum of the subtracted numbers you can use it in everything requiring number like so: Log(subtract(2,1,1)); or line('canvas id',subtract(frames,34,frames),200,400,200);. subtract('canvas id',n1,n2,n3,n4,n5,n6,n7,n8,n9,n10)"
+}
+var multiply=document.createElement("h1")
+multiply.innerText="multiply('params',n1,n2,n3,n4,n5,n6,n7,n8,n9,n10)"
+multiply.id="multiply"
+multiply.onclick=function(){
+    r.innerText="multiply is a cg.js function that returns the sum of the multiplied numbers, you can also use it like subtract and multiply."
+}
+document.body.appendChild(multiply)
+var divide=document.createElement("h1")
+divide.innerText="divide('params',n1,n2,n3,n4,n5,n6,n7,n8,n9,n10)"
+divide.id='divide'
+divide.onclick=function(){
+    r.innerText="divide is a cg.js return function that returns the sum of the divided numbers you can use just like the subtract,multiply,and add"
+}
+document.body.appendChild(divide)
+var restrictNum=document.createElement("h1")
+restrictNum.innerText="restrictNum('value',n1,n2)"
+restrictNum.id="restrictNum"
+restrictNum.onclick=function(){
+    r.innerText="restrictNum is a cg.js return function that returns the value of the restricted number"
+}
+document.body.appendChild(restrictNum)
+var adjustCanvasTextSize=document.createElement("h1")
+adjustCanvasTextSize.innerText="adjustCanvasTextSize('canvas id',size,'font')"
+adjustCanvasTextSize.id="adjustCanvasTextSize"
+adjustCanvasTextSize.onclick=function(){
+    r.innerText="adjustCanvasTextSize is a cg.js function that changes the text functions output text size( The textSize of the text sticker) You can use it like: adjustCanvasTextSize('canvas id',size,font)"
+}
+document.body.appendChild(adjustCanvasTextSize)
+
+})
+</script>
+</html>
